@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( DetectRoof )
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( RoofDetection RoofDetection.cpp )
+target_link_libraries( RoofDetection ${OpenCV_LIBS} )
